@@ -8,25 +8,53 @@
     android:orientation="vertical"
     android:background="#262D49">
 
-    <LinearLayout
-        android:gravity="center"
+
+
+<!--    Headr_Fragment-->
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <TextView
-        android:fontFamily="serif"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/weather"
-        android:textSize="20sp"
-        android:textColor="@android:color/white"/>
-
-    </LinearLayout>
+        android:layout_height="50dp"
+        android:id="@+id/headFrag"
+        class="com.savar.weatherapp.HeaderFragment"/>
 
 
 
 
+<!--    Navigation_Fragment-->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/navFrag"
+        class="com.savar.weatherapp.NaviFragment"/>
 
+
+
+
+<!--    Sidebar_Fragment-->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/sidFrag"
+        class="com.savar.weatherapp.SiderFragment"/>
+
+
+
+
+<!--    Cont_Fragment-->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/contFrag"
+        class="com.savar.weatherapp.ContentFragment"/>
+
+
+
+<!--    Foot_Fragment-->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/footFrag"
+        class="com.savar.weatherapp.FooterFragment"/>
 
 
 
