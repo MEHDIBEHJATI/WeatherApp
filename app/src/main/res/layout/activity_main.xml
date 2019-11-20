@@ -14,12 +14,40 @@
     android:orientation="vertical"
     android:background="#262D49">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/weather"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:fontFamily="serif"
+        android:textStyle="normal"/>
+    </LinearLayout>
 
 </LinearLayout>
 
 
 
-<!--    Deraver_Stert-->
+
+
+
+
+
+
+
+
+
+
+
+<!--    Derawer_Stert-->
 
 <LinearLayout
     android:background="@android:color/white"
@@ -30,10 +58,11 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@mipmap/ic_launcher"/>
+        android:scaleType="centerCrop"
+        android:background="@drawable/chatr"/>
 
 </LinearLayout>
-<!--    Deraver_End-->
+<!--    Derawer_End-->
 
 
 
