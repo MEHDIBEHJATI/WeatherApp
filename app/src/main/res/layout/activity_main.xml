@@ -28,7 +28,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/weather"
         android:textColor="@android:color/white"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:fontFamily="serif"
         android:textStyle="normal"/>
 
@@ -42,6 +42,133 @@
 
 
 
+<!--    Header_Start-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgSun"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_sun" />
+
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Nov"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:textSize="13sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/txtMoun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Tuesday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    Header_End-->
+
+
+
+<!--Section_Start-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#F35538"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="50sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+                <TextView
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="12dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txtInter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ 8"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New York, NY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--Section_End-->
 
 
 
@@ -93,28 +220,6 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="8dp">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_off"
-            android:padding="5dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/exit"
-            android:textSize="15sp"
-            android:padding="5dp" />
-
-    </LinearLayout>
-
-
-    <LinearLayout
         android:layout_margin="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,6 +232,7 @@
             android:padding="5dp"/>
 
         <TextView
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings"
@@ -149,6 +255,7 @@
             android:padding="5dp"/>
 
         <TextView
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mail"
@@ -156,6 +263,30 @@
             android:padding="5dp" />
 
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_off"
+            android:padding="5dp"/>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            android:textSize="15sp"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
 
 
 
@@ -182,6 +313,7 @@
             android:src="@drawable/ic_ice"/>
 
         <TextView
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="2dp"
@@ -190,6 +322,7 @@
 
 
         <TextView
+            android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mehdi_Behjati"

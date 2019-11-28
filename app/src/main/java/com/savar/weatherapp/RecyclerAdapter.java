@@ -24,12 +24,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {
         switch (position){
             case 0:
+
                 holder.txtName.setText("item_1");
                 break;
             case 1:
                 holder.txtName.setText("item_2");
                 break;
             case 2:
+                holder.itemView.setHovered(true);
                 holder.txtName.setText("item_3");
                 break;
             case 3:

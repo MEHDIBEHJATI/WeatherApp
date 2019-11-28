@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/imgSun"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_ice" />
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/txtDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Nov"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/txtMoun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/_7c"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
