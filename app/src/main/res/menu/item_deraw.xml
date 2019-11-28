@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/tm_mess"
+            android:icon="@drawable/ic_mail"
+            android:title="@string/message"/>
+
+        <item android:id="@+id/tm_set"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/message"/>
+
+        <item android:id="@+id/tm_exi"
+            android:icon="@drawable/ic_off"
+            android:title="@string/message"/>
+
+    </group>
+
+</menu>
