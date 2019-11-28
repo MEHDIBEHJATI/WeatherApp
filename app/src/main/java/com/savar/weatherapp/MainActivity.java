@@ -1,6 +1,8 @@
 package com.savar.weatherapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -14,6 +16,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+//        Recycler_Start
+        RecyclerView recycler = findViewById(R.id.recycler);
+
+        RecyclerAdapter adapter = new RecyclerAdapter();
+        recycler.setAdapter(adapter);
+
+
+        recycler.setLayoutManager(new LinearLayoutManager(MainActivity.this,RecyclerView.HORIZONTAL,false));
+
+//        Recycler_End
 
     }
 //        MENU_START
