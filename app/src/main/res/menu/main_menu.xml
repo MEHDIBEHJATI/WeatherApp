@@ -5,15 +5,15 @@
 
     <item
         android:id="@+id/first_item"
-        android:title="first_title"/>
+        android:title="Search"/>
     <item
         android:id="@+id/secend_item"
-        android:title="secend_title"/>
+        android:title="Imprtant"/>
     <item
         android:id="@+id/therd_item"
-        android:title="therd_title"/>
+        android:title="Updates"/>
     <item
         android:id="@+id/forth_item"
-        android:title="forth_title"/>
+        android:title="About"/>
 
 </menu>
