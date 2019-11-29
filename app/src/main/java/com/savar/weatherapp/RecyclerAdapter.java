@@ -25,20 +25,20 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         switch (position){
             case 0:
 
-                holder.txtName.setText("item_1");
+                holder.txtName.setText("0000");
                 break;
             case 1:
-                holder.txtName.setText("item_2");
+                holder.txtName.setText("1300");
                 break;
             case 2:
                 holder.itemView.setHovered(true);
-                holder.txtName.setText("item_3");
+                holder.txtName.setText("1735");
                 break;
             case 3:
-                holder.txtName.setText("item_4");
+                holder.txtName.setText("1624");
                 break;
             case 4:
-                holder.txtName.setText("item_5");
+                holder.txtName.setText("1520");
                 break;
         }
     }

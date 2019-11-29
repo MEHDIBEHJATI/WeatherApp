@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 
@@ -17,16 +18,29 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
 //        Recycler_Start
         RecyclerView recycler = findViewById(R.id.recycler);
 
         RecyclerAdapter adapter = new RecyclerAdapter();
         recycler.setAdapter(adapter);
 
-
         recycler.setLayoutManager(new LinearLayoutManager(MainActivity.this,RecyclerView.HORIZONTAL,false));
-
 //        Recycler_End
+
+
+
+//        Thread_Start
+
+        Thread thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+        thread.start();
+
+//        Thread_End
 
     }
 //        MENU_START
